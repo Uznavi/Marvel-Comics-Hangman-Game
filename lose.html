@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f44336, #e57373);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #d32f2f;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        a:hover {
+            background-color: #c62828;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Over! The word was: {{ word }}</h1>
+    <a href="/hangman_game">Try Again</a>
+</body>
+</html>
